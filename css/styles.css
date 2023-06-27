@@ -5,7 +5,8 @@
     --text: #434455;
     --logo-down: #F4F4FD;
     --border: #E7E9FC;
-    --button-filter-hover: #404BBF;   
+    --button-filter-hover: #404BBF;
+    --grey-backround: rgba(46, 47, 66, 0.70);
 }
 
 body {
@@ -30,10 +31,6 @@ ul, ol {
     list-style-type: none;
 }
 
-.page-container {
-    flex-direction: column;
-}
-
 img {
     display: block;
     max-width: 100%;
@@ -42,6 +39,10 @@ img {
 a {
     font-style: normal;
     text-decoration: none;
+}
+
+.page-container {
+    flex-direction: column;
 }
 
 .container {
@@ -140,8 +141,14 @@ a {
 }
 
 .hero {
+    max-width: 1440px;
+    background-image: linear-gradient(var(--grey-backround),var(--grey-backround)), url(../images/hero/people-office\ 1\ \(2\).jpg);
+    background-repeat: no-repeat;
     background-color: var(--brand-background);
+    background-position: center;
+    background-size: cover;
     padding: 188px 0;
+    margin: 0 auto;
 }
 
 .container-hero {    
@@ -288,6 +295,7 @@ a {
     background: var(--page);
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .third-title.card  {
@@ -384,16 +392,19 @@ max-width: 264px;
     background-color: var(--button-filter-hover);
     color: var(--page);
     border: 1px solid transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .button-filter:focus {
     background-color: var(--button-filter-hover);
     color: var(--page);
-    border: 1px solid transparent;
+    border: 1px solid transparent;box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .button-filter:active {
     background-color: var(--brand-background);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio-list {
