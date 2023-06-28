@@ -333,6 +333,7 @@ a {
 .list-customers {
     display: flex;
     gap: 24px;
+    
 }
 
 .item-customers {
@@ -340,7 +341,10 @@ a {
     width: calc((100% - 120px) / 6);
     border-radius: 4px;
     border: 1px solid var(--border-icons);
+    
 }
+
+
 
 .footer-section {
     background-color: var(--brand-background);
