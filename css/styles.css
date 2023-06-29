@@ -356,8 +356,8 @@ a {
 }
 
 .container-footer {
-display: flex;
-align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .footer-paragraf {
@@ -398,7 +398,7 @@ max-width: 264px;
 }
 
 .right-side {
-    margin-right: auto;   
+    margin-right: auto;
 }
 
 .social-link {
