@@ -9,6 +9,7 @@
     --grey-backround: rgba(46, 47, 66, 0.70);
     --border-icons: #8E8F99;
     --hover-icon-footer: #31D0AA;
+    --modal-back: #FCFCFC;
 }
 
 body {
@@ -94,6 +95,7 @@ a {
 
 .menu-link:focus, .menu-link:active {
     color: var(--button-filter-hover);
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .menu-link {
@@ -104,13 +106,14 @@ a {
     letter-spacing: 0.02em;
     color: var(--brand-background);
     padding: 24px 0;
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .menu-link:hover, .menu-link:active {
     color: var(--button-filter-hover);
 }
 
-.menu-link.active::after {
+.active::after {
     content: '';
     display: block;
     width: 100%;
@@ -120,6 +123,12 @@ a {
     position: absolute;
     bottom: -2px;
     left: 0;
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
+}
+
+.active {
+    color: var(--button-filter-hover);
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .menu-list > a {
@@ -145,14 +154,17 @@ a {
     letter-spacing: 0.02em;
     color: var(--text);
     padding: 24px 0;
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .address-link:hover {
     color: var(--button-filter-hover);
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .address-link:focus {
     color: var(--button-filter-hover);
+    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
 }
 
 .hero {
@@ -199,14 +211,17 @@ a {
     min-width: 169px;
     height: 56px; 
     border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:hover {
     background-color: var(--button-filter-hover);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-button:focus {
     background-color: var(--button-filter-hover);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -349,8 +364,13 @@ a {
 .social-link-team:hover,
 .social-link-team:active {
 background-color: var(--button-filter-hover);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
+.social-link-team {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .title-customers {
     font-weight: 700;
@@ -389,6 +409,7 @@ background-color: var(--button-filter-hover);
     border-radius: 4px;
     border: 1px solid var(--border-icons);
     color: var(--border-icons);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-customers {
@@ -399,6 +420,7 @@ background-color: var(--button-filter-hover);
 .link-customers:focus {
     border: 1px solid var(--button-filter-hover);
     color: var(--button-filter-hover);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .item-customers {
@@ -468,13 +490,13 @@ max-width: 264px;
 
 .paragraf-social {
     font-size: 16px;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.32px;
-        color: var(--page);
-        margin-bottom: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--page);
+    margin-bottom: 16px;
 }
 
 .social-link {
@@ -495,6 +517,11 @@ max-width: 264px;
 .social-link-footer:hover,
 .social-link-footer:active {
     background-color: var(--hover-icon-footer);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link-footer {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socialmedia-item {
@@ -539,6 +566,7 @@ max-width: 264px;
     border-radius: 4px;
     padding: 12px 24px;
     min-width: 69px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:hover {
@@ -546,18 +574,20 @@ max-width: 264px;
     color: var(--page);
     border: 1px solid transparent;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:focus {
     background-color: var(--button-filter-hover);
     color: var(--page);
     border: 1px solid transparent;box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filter:active {
     background-color: var(--brand-background);
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list {
@@ -569,6 +599,12 @@ max-width: 264px;
 
 .img-item {
     width: calc((100% - 48px) / 3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .card-portfolio {
@@ -583,4 +619,61 @@ max-width: 264px;
 
 .third-title.portfolio-second {
     text-align: left;
+}
+
+.modal-icon {
+    stroke: var(--brand-background);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    
+}
+
+.backdrop.is-hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-67%);
+    width: 408px;
+    height: 584px;
+    border-radius: 4px;
+    background: var(--modal-back);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+}
+
+.modal-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.10);;
+    padding: 0;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:active {
+    fill: var(--page);
+    background-color: var(--button-filter-hover);
+    transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
