@@ -8,6 +8,7 @@
     --button-filter-hover: #404BBF;
     --grey-backround: rgba(46, 47, 66, 0.70);
     --border-icons: #8E8F99;
+    --hover-icon-footer: #31D0AA;
 }
 
 body {
@@ -96,6 +97,7 @@ a {
 }
 
 .menu-link {
+    position: relative;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -106,6 +108,18 @@ a {
 
 .menu-link:hover, .menu-link:active {
     color: var(--button-filter-hover);
+}
+
+.menu-link.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--button-filter-hover);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
 }
 
 .menu-list > a {
@@ -236,6 +250,17 @@ a {
     color: var(--text);
 }
 
+.box-advantages {
+    border-radius: 4px;
+    background-color: var(--logo-down);
+    max-width: 264px;
+    max-height: 112px;
+    padding: 24px 100px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
 .item-advantages {
     width: calc((100% - 72px) / 4);
 }
@@ -305,12 +330,27 @@ a {
 
 .team-paragraf {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .card-team {
-    padding: 32px 16px;
-    position: relative;
+    padding: 32px;
 }
+
+.socialmedia-list-team {
+    display: flex;
+    align-items: center;
+}
+    
+.socialmedia-item-team {
+    width: calc((100% - 72px) / 4);
+}
+
+.social-link-team:hover,
+.social-link-team:active {
+background-color: var(--button-filter-hover);
+}
+
 
 .title-customers {
     font-weight: 700;
@@ -336,7 +376,6 @@ a {
     display: flex;
     justify-content: center;
     gap: 24px;
-    width: calc((100% - 120px) / 6);
     align-items: center;
 }
 
@@ -346,6 +385,7 @@ a {
     align-items: center;
     width: 168px;
     height: 88px;
+    padding: 16px 32px;
     border-radius: 4px;
     border: 1px solid var(--border-icons);
     color: var(--border-icons);
@@ -358,15 +398,13 @@ a {
 .link-customers:hover, 
 .link-customers:focus {
     border: 1px solid var(--button-filter-hover);
-    color: currentColor;
+    color: var(--button-filter-hover);
 }
 
 .item-customers {
     background: var(--page);
-   padding: 16px 32px;
+    width: calc((100% - 120px) / 6);
 }
-
-
 
 .footer-section {
     background-color: var(--brand-background);
@@ -375,7 +413,7 @@ a {
 
 .container-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .footer-paragraf {
@@ -450,9 +488,13 @@ max-width: 264px;
 }
 
 .social {
-    
     fill: currentColor;
     stroke: var(--logo-down);
+}
+
+.social-link-footer:hover,
+.social-link-footer:active {
+    background-color: var(--hover-icon-footer);
 }
 
 .socialmedia-item {
