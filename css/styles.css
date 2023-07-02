@@ -663,7 +663,6 @@ max-width: 264px;
     background: var(--modal-back);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
     transform: translate(-50%, -50%) scale(1);
-    
 }
 
 .modal-btn {
@@ -694,8 +693,8 @@ max-width: 264px;
     overflow: hidden;
 }
 
-.link-portfolio:hover .overlay-parafraf,
-.link-portfolio:focus .overlay-parafraf {
+.link-portfolio:hover .overlay-paragraf,
+.link-portfolio:focus .overlay-paragraf {
     transform: translateY(0%);
 }
 
