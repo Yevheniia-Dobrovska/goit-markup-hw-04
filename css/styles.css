@@ -134,7 +134,7 @@ a {
 
 .active {
     color: var(--button-filter-hover);
-    transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in;
+    /* transition: color 250ms ease-in, background-color 250ms ease-in, border-color 250ms ease-in; */
 }
 
 .menu-list > a {
